@@ -1,3 +1,3 @@
-# Django + Lettuce: Sample App
+# Django: Sample App
 
-This is the sample application.
+Seguimiento de Sample App (de Ruby on Rails Tutorial) en Django.

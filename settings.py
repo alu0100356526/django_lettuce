@@ -56,7 +56,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = ''
+STATIC_ROOT = '/home/juanmiguel/Aptana Studio 3 Workspace/django_projects/staticpages/sample_app/static/'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -72,7 +72,16 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+	 "/home/juanmiguel/Aptana Studio 3 Workspace/django_projects/staticpages/sample_app/static/blueprint/",
+	 "/home/juanmiguel/Aptana Studio 3 Workspace/django_projects/staticpages/sample_app/static/blueprint/src/",
+	 "/home/juanmiguel/Aptana Studio 3 Workspace/django_projects/staticpages/sample_app/static/blueprint/plugins/buttons/",
+	 "/home/juanmiguel/Aptana Studio 3 Workspace/django_projects/staticpages/sample_app/static/blueprint/plugins/buttons/icons/",
+	 "/home/juanmiguel/Aptana Studio 3 Workspace/django_projects/staticpages/sample_app/static/blueprint/plugins/fancy-type/",
+	 "/home/juanmiguel/Aptana Studio 3 Workspace/django_projects/staticpages/sample_app/static/blueprint/plugins/link-icons/",
+	 "/home/juanmiguel/Aptana Studio 3 Workspace/django_projects/staticpages/sample_app/static/blueprint/plugins/link-icons/icons/",
+	 "/home/juanmiguel/Aptana Studio 3 Workspace/django_projects/staticpages/sample_app/static/blueprint/plugins/rtl/",
 )
+
 
 # List of finder classes that know how to find static files in
 # various locations.
@@ -106,6 +115,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    "/home/juanmiguel/Aptana Studio 3 Workspace/django_projects/staticpages/sample_app/templates/",
 )
 
 INSTALLED_APPS = (
@@ -115,7 +125,8 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	 'lettuce.django',
+	'lettuce.django',
+	'sample_app',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
