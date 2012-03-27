@@ -1,0 +1,14 @@
+{% extends "base.html.py" %}
+
+{% block title %}
+	{{ block.super }}{{ title }}
+{% endblock %}
+
+{% block content %}
+		<h1>Home</h1>
+		<p>
+			This is the home page for the Sample Application.
+		</p>
+		{% url staticpages.sample_app.views.signup as sgu %}
+		<a class="signup_button round" href="{{ sgu }}">Sign Up</a>
+{% endblock %}
